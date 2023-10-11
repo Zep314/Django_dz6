@@ -23,9 +23,17 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # SECURITY WARNING: keep the secret key used in production secret!
 # SECRET_KEY = 'django-insecure-)d6^1wspete4!nx#w$o!9cflf=^tn(r9#a9_vsu@^)6bk@+byf'
 
+SECRET_KEY = os.getenv('SECRET_KEY')
+
 # SECURITY WARNING: don't run with debug turned on in production!
 # DEBUG = True
 DEBUG = False
+
+# Развертывание проекта.
+SESSION_COOKIE_SECURE = True
+CSRF_COOKIE_SECURE = True
+
+
 
 ALLOWED_HOSTS = [
     '127.0.0.1',
@@ -43,7 +51,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'myapp6',
-    'debug_toolbar',
+#    'debug_toolbar',
 ]
 
 INSTALLED_APPS += [
@@ -87,11 +95,6 @@ WSGI_APPLICATION = 'Django_dz6.wsgi.application'
 # https://docs.djangoproject.com/en/4.2/ref/settings/#databases
 
 DATABASES = {
-    # 'default': {
-    #     'ENGINE': 'django.db.backends.sqlite3',
-    #     'NAME': BASE_DIR / 'db.sqlite3',
-    # }
-
          'default': {
              'ENGINE': 'django.db.backends.mysql',
              'NAME': 'Zep314$default',
@@ -191,7 +194,4 @@ INTERNAL_IPS = [
     '127.0.0.1',  # Панель DjDT будет отображаться только на локальной машине
 ]
 
-# Развертывание проекта.
-SESSION_COOKIE_SECURE = True
-CSRF_COOKIE_SECURE = True
-SECRET_KEY = os.getenv('SECRET_KEY')
+

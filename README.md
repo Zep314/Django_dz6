@@ -171,7 +171,20 @@ Many-to-Many с таблицей товаров (Product).
     
     ALTER DATABASE Zep314$default CHARACTER SET utf8 COLLATE utf8_general_ci;
 
+После внесения настроек (удаление настроек, связанных с отладкой), загружаем готовую версию проекта на GitHub/
 
+В консоли *pythonanywhere.com* клонируем проект
+
+    git clone https://github.com/Zep314/Django_dz6.git
+
+Создаем виртуальное окружение
+
+    mkvirtualenv --python=/usr/bin/python3.10 virtualenv
+
+Устанавливаем необходимые пакеты:
+
+    cd Django_dz6
+    pip install -r requirements.txt
 
 ## Результат работы:
 
