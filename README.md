@@ -152,6 +152,27 @@ Many-to-Many с таблицей товаров (Product).
 Далее можно управлять данными, которые находятся у нас в безе.
 </details>
 
+Так же в проект добавляем отладочную панель **Django Debug Toolbar**
+
+    pip install django-debug-toolbar77
+
+Вносим дополнительные правки в файлы:
+
+- [Django_dz6/Django_dz6/Django_dz6/settings.py](/Django_dz6/Django_dz6/settings.py)
+- [Django_dz6/Django_dz6/Django_dz6/urls.py](/Django_dz6/Django_dz6/urls.py)
+
+Отладочная панель должна заработать.
+
+#### Разворачивание приложения на сервере в интернете
+
+Регистрируемся на площадке [https://www.pythonanywhere.com/](https://www.pythonanywhere.com/).
+
+Создаем базу данных MySQL, устанавливаем кодировку в консоли mysql
+    
+    ALTER DATABASE Zep314$default CHARACTER SET utf8 COLLATE utf8_general_ci;
+
+
+
 ## Результат работы:
 
 Общий вид панели администрирования
