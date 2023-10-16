@@ -186,7 +186,14 @@ Many-to-Many с таблицей товаров (Product).
     cd Django_dz6
     pip install -r requirements.txt
 
+Делаем необходимые настройки в панели управления сайтом, делаем миграцию базы данных.
+
 ## Результат работы:
 
-Общий вид панели администрирования
+Сайт расположен по адресу: [http://zep314.pythonanywhere.com/](http://zep314.pythonanywhere.com/)
+
+Страница списка заказов
 ![screen1.png](screen1.png)
+
+Страница редактирования заказа
+![screen2.png](screen2.png)
